@@ -1,0 +1,30 @@
+body {
+    font-family: Roboto;
+    margin: 0;
+}
+
+.cont {
+    border: 1px solid blue;
+    background-color: #EEE;
+}
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr 5fr;
+}
+
+.sidebar {
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.header {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.main {
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
