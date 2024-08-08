@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto;
+    font-family: Arial;
     margin: 0;
 }
 
@@ -14,9 +14,54 @@ body {
     grid-template: repeat(5, 1fr) / 1fr 5fr;
 }
 
+.icon {
+    width: 24px;
+    fill: white;
+}
+
 .sidebar {
     grid-row-start: 1;
     grid-row-end: 6;
+    display: grid;
+    grid-template: 1fr 9fr / 1fr;
+    background-color: rgb(86, 155, 220);
+}
+
+.sidebar .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.sidebar .title .dashboard-icon {
+    width: 48px;
+}
+
+.sidebar .title .text {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.sidebar .links {
+    display: grid;
+    gap: 20px;
+    height: 60%;
+}
+
+.sidebar .links ul {
+    list-style: none;
+    color: white;
+    display: grid;
+    gap: 12px;
+    padding: 0 0 0 40px;
+}
+
+.sidebar .links ul li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .header {
@@ -28,3 +73,4 @@ body {
     grid-row-start: 2;
     grid-row-end: 6;
 }
+
