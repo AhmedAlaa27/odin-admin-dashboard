@@ -25,11 +25,12 @@ body {
     display: grid;
     grid-template: 1fr 9fr / 1fr;
     background-color: rgb(86, 155, 220);
+    padding-left: 24px;
 }
 
 .sidebar .title {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 6px;
 }
@@ -53,9 +54,11 @@ body {
 .sidebar .links ul {
     list-style: none;
     color: white;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 12px;
-    padding: 0 0 0 40px;
+    padding: 0;
 }
 
 .sidebar .links ul li {
